@@ -1,0 +1,106 @@
+/* App styles */
+.App {
+  text-align: center;
+}
+
+/* Navbar styles */
+.navbar {
+  width:100%;
+  background-color: #333;
+  padding:10px 0px 10px 0px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  display: flex;
+  gap:10px;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding-left: 5px;
+}
+.menu-icon {
+  display: none;
+}
+/* ImageCard styles */
+.image-card {
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.image-info {
+  padding-top: 10px;
+}
+
+.image-info h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.image-info p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+/* Gallery styles */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+}
+@media (max-width: 768px) {
+  .nav-elements ul li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-elements {
+    position: absolute;
+    left: 0;
+    top: 45px;
+    background-color: #333;
+    width: 0px;
+    height: calc(100vh - 60px);
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+  }
+
+  .nav-elements.active {
+    width: 270px;
+  }
+
+  .nav-elements ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-elements ul li {
+    margin-right: unset;
+    margin-top: 22px;
+  }
+}
