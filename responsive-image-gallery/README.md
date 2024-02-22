@@ -62,4 +62,4 @@ To run this project locally, follow these steps:
 
 ## Credits
 
-This project was created by [Your Name]. Feel free to contribute or provide feedback!
+This project was created by Preeti Raj. Feel free to contribute or provide feedback!
