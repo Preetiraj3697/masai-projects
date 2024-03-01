@@ -2,6 +2,8 @@
 
 This project is a responsive image gallery built with React. It includes a navbar component and a gallery component that adjusts its layout based on different screen sizes.
 
+Link => https://65d72c3497d34f0c3698d13c--vermillion-malasada-4404ba.netlify.app/
+
 ## Overview
 
 The project consists of the following components:
