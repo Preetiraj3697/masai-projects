@@ -1,0 +1,129 @@
+/* ProductDetailsPage.css */
+.product-details-container {
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  
+  .product-details-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding-bottom: 20px;
+  }
+  
+  .product-details-info {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+  }
+  
+  .product-details-info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .product-details-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .product-details-info button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .product-images {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+  }
+  
+  .product-images img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px;
+    cursor: pointer;
+    mix-blend-mode: multiply;
+  }
+
+.btn{
+font-family: Roboto, sans-serif;
+font-weight: 0;
+font-size: 14px;
+color: #fff;
+background-color: #0066CC;
+padding: 10px 30px;
+border: solid #0683ff 2px;
+box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+border-radius: 50px;
+transition : 708ms;
+transform: translateY(0);
+cursor: pointer;
+margin-right: 10px;
+}
+
+.btn:hover{
+
+transition : 708ms;
+padding: 10px 50px;
+transform : translateY(-0px);
+background-color: #fff;
+color: #0066cc;
+border: solid 2px #0066cc;
+}
+
+
+  
+  /* ImageModal.css */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px;
+  font-size: 24px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.close:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+  
